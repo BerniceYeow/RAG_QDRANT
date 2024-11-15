@@ -1,0 +1,41 @@
+[
+  {
+    "title": "American Rescue Plan Act of 2021",
+    "question": "What were the main economic relief provisions of the American Rescue Plan Act of 2021?",
+    "context": "The American Rescue Plan Act of 2021 provided direct payments to individuals, extended unemployment benefits, and increased funding for COVID-19 vaccine distribution and testing.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Provided direct payments to individuals, extended unemployment benefits, and increased funding for COVID-19 vaccine distribution and testing.",
+        "start": 0,
+        "end": 108
+      }
+    ]
+  },
+  {
+    "title": "Inflation Reduction Act of 2022",
+    "question": "What are the key climate change provisions of the Inflation Reduction Act of 2022?",
+    "context": "The Inflation Reduction Act of 2022 includes significant investments in clean energy technologies, such as solar and wind power, and provides tax credits for electric vehicles and energy-efficient home improvements.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Includes significant investments in clean energy technologies, such as solar and wind power, and provides tax credits for electric vehicles and energy-efficient home improvements.",
+        "start": 0,
+        "end": 140
+      }
+    ]
+  },
+  {
+    "title": "Infrastructure Investment and Jobs Act",
+    "question": "What are the major infrastructure projects funded by the Infrastructure Investment and Jobs Act?",
+    "context": "The Infrastructure Investment and Jobs Act provides funding for a wide range of infrastructure projects, including roads, bridges, public transit, airports, and broadband internet.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Provides funding for a wide range of infrastructure projects, including roads, bridges, public transit, airports, and broadband internet.",
+        "start": 0,
+        "end": 114
+      }
+    ]
+  }
+]

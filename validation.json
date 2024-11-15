@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Patriot Act",
+    "question": "What are the main provisions of the Patriot Act?",
+    "context": "The Patriot Act, passed after the September 11th attacks, expanded government surveillance powers and gave law enforcement agencies new tools to investigate terrorism.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Expanded government surveillance powers and gave law enforcement agencies new tools to investigate terrorism.",
+        "start": 0,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "title": "Voting Rights Act of 1965",
+    "question": "What was the primary purpose of the Voting Rights Act of 1965?",
+    "context": "The Voting Rights Act of 1965 aimed to eliminate racial discrimination in voting by outlawing literacy tests and other discriminatory practices.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "To eliminate racial discrimination in voting by outlawing literacy tests and other discriminatory practices.",
+        "start": 0,
+        "end": 89
+      }
+    ]
+  },
+  {
+    "title": "No Child Left Behind Act",
+    "question": "What were the main goals of the No Child Left Behind Act?",
+    "context": "The No Child Left Behind Act aimed to improve the quality of education in the United States by holding schools accountable for student achievement and implementing standardized testing.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "To improve the quality of education in the United States by holding schools accountable for student achievement and implementing standardized testing.",
+        "start": 0,
+        "end": 114
+      }
+    ]
+  }
+]

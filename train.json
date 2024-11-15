@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Tax Cuts and Jobs Act of 2017",
+    "question": "What were the major tax cuts included in the Tax Cuts and Jobs Act of 2017?",
+    "context": "The Tax Cuts and Jobs Act of 2017 significantly reduced individual and corporate income tax rates. It also doubled the standard deduction and increased the child tax credit.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Reduced individual and corporate income tax rates, doubled the standard deduction, and increased the child tax credit.",
+        "start": 0,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "title": "Affordable Care Act",
+    "question": "What are the main provisions of the Affordable Care Act?",
+    "context": "The Affordable Care Act, also known as Obamacare, expanded health insurance coverage to millions of Americans. It mandated health insurance coverage, created health insurance marketplaces, and provided subsidies to help people afford coverage.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "Expanded health insurance coverage, mandated health insurance coverage, created health insurance marketplaces, and provided subsidies to help people afford coverage.",
+        "start": 0,
+        "end": 175
+      }
+    ]
+  },
+  {
+    "title": "Clean Air Act",
+    "question": "What are the primary goals of the Clean Air Act?",
+    "context": "The Clean Air Act aims to protect air quality by regulating emissions from stationary sources, such as power plants and factories, and mobile sources, such as cars and trucks.",
+    "is_impossible": false,
+    "answers": [
+      {
+        "text": "To protect air quality by regulating emissions from stationary sources, such as power plants and factories, and mobile sources, such as cars and trucks.",
+        "start": 0,
+        "end": 120
+      }
+    ]
+  }
+]
