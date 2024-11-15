@@ -72,6 +72,43 @@ Computational Cost: Fine-tuning requires significant computational resources, es
 Time-Consuming: The fine-tuning process can be time-consuming, particularly for large models and datasets.
 Potential Overfitting: Overfitting can occur if the model is trained on a limited dataset or for too long.
 
+###Reasoning for the Evaluation Metrics
+This code defines an Evaluator class for evaluating a question-answering model. The evaluation focuses on two key scenarios:
+
+1. Answer Expected: When the model should provide an answer to the question.
+2. "I don't know" Expected: When the model should indicate that it lacks sufficient information to answer the question.
+
+The evaluation metrics used are:
+
+Answered Correctly: Percentage of questions where the model's answer matches one of the provided answers.
+Skipped: Percentage of questions where the model responded with "I don't know" although an answer was expected.
+Wrong Answer: Percentage of questions where the model provided an incorrect answer.
+Hallucination: Percentage of questions where the model responded with an answer when it should have said "I don't know."
+✅ I don't know: Percentage of questions where the model correctly responded with "I don't know" when an answer was not possible.
+These metrics assess the model's ability to:
+
+Accuracy: Measure how often the model provides correct answers when expected.
+Completeness: Evaluate how often the model acknowledges its limitations by saying "I don't know" when appropriate.
+Honesty: Assess whether the model avoids making up answers when it lacks knowledge.
+Summary of Evaluation Results
+The Evaluator class provides two main functionalities:
+
+evaluate_model: This function takes an answer column name (e.g., "generated_answer") and calculates the evaluation metrics for each scenario ("answer_expected" and "idk_expected"). It returns two dictionaries, one for each scenario, containing the percentages for each category (e.g., "✅ Answered Correctly", "❎ Skipped").
+print_eval: This function compares the performance of two models (baseline and fine-tuned) on the same data. It uses evaluate_model to get the metrics for both models and then merges them into a DataFrame for easier comparison.
+plot_model_comparison: This function creates a bar chart to visualize the evaluation results for a specific scenario ("answer_expected" or "idk_expected"). It uses Seaborn for plotting and allows customization of labels and titles.
+Pros and Cons of the Evaluation Metrics
+Pros:
+
+Simple and interpretable: The chosen metrics are easy to understand and directly relevant to the desired model behavior.
+Captures key aspects: They assess both accuracy and completeness, providing a comprehensive view of the model's performance.
+Identifies weaknesses: Metrics like "Hallucination" and "Skipped" can pinpoint areas for improvement.
+Cons:
+
+Limited scope: These metrics may not capture all aspects of a question-answering system, such as answer quality or factual correctness beyond matching provided answers.
+Sensitivity to data: The evaluation may heavily depend on the quality and format of the training data.
+Potential for bias: The definition of "correct" answer depends on the provided ones, which may not always be exhaustive.
+Overall, the chosen evaluation metrics offer a good starting point for assessing a question-answering model. While they are simple and interpretable, it's important to consider their limitations and combine them with other evaluation methods for a more complete understanding of the model's strengths and weaknesses. This will be the future work that I will be focusing on.
+
 ### Overall, the combined approach of embedding generation, few-shot prompting, and fine-tuning offers a powerful framework for improving the performance of language models. However, it's important to carefully consider the trade-offs and computational costs involved.
 
 Additional Considerations:
